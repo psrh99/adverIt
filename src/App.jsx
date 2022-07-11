@@ -1,19 +1,16 @@
 import React from 'react'
-import NavBar from './components/Navbar/NavBar.component'
-import Footer from './components/Footer/Footer.component'
-import ProductList from './components/ProductList/ProductList.components.jsx'
+import Home from './components/subpages/Home/home.component.jsx'
+import Login from './components/subpages/login/login.component.jsx'
 import './App.css'
+import {Routes, Route} from 'react-router-dom'
+
 
 function App() {
   return (
-    <div>
-      <>
-      <NavBar />
-      {/* <Banner /> */}
-      <ProductList/>
-      <Footer/> 
-      </>
-    </div>
+    <Routes>      
+    <Route path='/' element={<Home />} /> 
+      <Route path='/login' element={<Login />} />
+    </Routes>
   )
 }
 
