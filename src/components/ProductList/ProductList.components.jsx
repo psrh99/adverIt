@@ -1,75 +1,50 @@
 import './ProductList.styles.css'
-import Card1 from './card1.jpg'
+// import Card1 from './card1.jpg'
+// import Card2 from './card2.jpg'
+// import Card3 from './card3.png'
+// import Card4 from './card4.png'
+// import Card5 from './card5.jpg'
+// import Card6 from './card6.jpg'
+// import Card7 from './card7.jpg'
+import ListComponent from './List.component'
 
-const ProductList = () => (
-    <div className='main'>
-        <div className="card" style={{width: "18rem"}}>
-        <img src={Card1} className="card-img-top" alt="..." />
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
 
-        <div className="card" style={{width: "18rem"}}>
-        <img src={Card1} className="card-img-top" alt="..." />
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
 
-        <div className="card" style={{width: "18rem"}}>
-        <img src={Card1} className="card-img-top" alt="..." />
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
 
-        <div className="card" style={{width: "18rem"}}>
-        <img src={Card1} className="card-img-top" alt="..." />
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
+const ProductList = () => {
 
-        <div className="card" style={{width: "18rem"}}>
-        <img src={Card1} className="card-img-top" alt="..." />
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
+    const listItems = [
+        {
+            "id":1,
+            "title": "Renault kwid",
+            "desc": "The entry-level hatchback is offered in four trims: RXL, RXL (O), RXT, and Climber.",
+            "imageUrl": "https://media.zigcdn.com/media/content/2022/Mar/651092705-whatsappimage2022-03-14at1.41.55pmtitle_720x540.jpg"
+        },
+        {
+            "id":2,
+            "title": "Maruti Swift",
+            "desc": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imageUrl" : "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Swift/8378/1644834798148/front-left-side-47.jpg"
+        },
+        {
+            "id": 3,
+            "title": "iphone 11",
+            "desc": "nice iphone",
+            "imageUrl" :"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-black-select-2019?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1566956144418"
+        }
+    ]
 
-        <div className="card" style={{width: "18rem"}}>
-        <img src={Card1} className="card-img-top" alt="..." />
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
-
-        <div className="card" style={{width: "18rem"}}>
-        <img src={Card1} className="card-img-top" alt="..." />
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
-
+    return(
+        <div className='main'>
+            {
+                listItems.map(item => (
+                    <ListComponent key={item.id} item = {item} />
+                    // console.log(item)
+                ))
+            }
     </div>
+    )
     
-
-)
-
+}
 
 export default ProductList
