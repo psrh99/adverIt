@@ -38,7 +38,7 @@ const AddnewPost =() =>(
             <input type="text" name="category" className='input-box' />
             </label>
             <br />
-            <input type="submit" value="Submit" className='btn btn-primary sub-btn'/>
+            <input type="submit" value="Submit" className='btn btn-primary sub-btn-addps'/>
             </form>
         </div>
     </>
