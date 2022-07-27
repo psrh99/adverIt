@@ -8,7 +8,7 @@ import GoogleLoginComponent  from './components/subpages/GoogleLogin/googlebutto
 // import Carouselcomp from './components/Banner/carousel.jsx'
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
-import AddnewPost from './components/subpages/Home/addpost.component.jsx'
+import AddnewPost from './components/subpages/Home/Addpost.component.jsx'
 
 
 function App() {
@@ -24,8 +24,7 @@ function App() {
     <Route path='/googlebutton' element={<GoogleLoginComponent />}/>
     {/* <Route path='/carousel' element={<Carouselcomp />} /> */}
     <Route path='/addPost' element={<AddnewPost />} />
-
-
+    
     </Routes>
     </div>
 

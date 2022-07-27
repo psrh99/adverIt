@@ -1,7 +1,7 @@
 import './NavBar.styles.css'
 import {Link} from 'react-router-dom'
 import addPost from './add.png'
-import AddnewPost from '../subpages/Home/addpost.component';
+import AddnewPost from '../subpages/Home/Addpost.component';
 
 const NavBar = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
