@@ -29,8 +29,26 @@ const ProductList = () => {
         {
             "id": 3,
             "title": "iphone 11",
-            "desc": "nice iphone",
+            "desc": "6.1-inch 15.5 cm diagonal Liquid Retina HD LCD display Water and dust resistant 2 meters for up to 30 minutes.",
             "imageUrl" :"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-black-select-2019?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1566956144418"
+        },
+        {
+            "id": 4,
+            "title": "LG 60 cm Full HD IPS LCD MONITOR",
+            "desc": "LG 60 cm/24 inches Full HD IPS 1920 x 1080 Pixels LCD Monitor, Inbuilt Speaker, HDMI x 2, VGA Port, 75 Hz Refresh Rate, AMD Freesync",
+            "imageUrl" :"https://m.media-amazon.com/images/I/61Qm7pa0ptS._SL1500_.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Redgear Shadow Blade Mechanical Keyboard",
+            "desc": "Redgear Shadow Blade Mechanical Keyboard with Drive Customization, Spectrum LED Lights, Media Control Knob and Wrist Support (Black)",
+            "imageUrl" :"https://m.media-amazon.com/images/I/61NKGdlO36L._SL1500_.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Royal Enfield Meteor 350",
+            "desc": "Royal Enfield Meteor 350 is a cruiser bike available at a starting price of Rs. 2,05,766 in India. It is available in 3 variants and 10 colours with top variant price starting from Rs. 2,21,980. ",
+            "imageUrl" :"https://imgd.aeplcdn.com/393x221/bw/models/royal-enfield-meteor-350-fireball20201106124644.jpg"
         }
     ]
 

@@ -1,6 +1,7 @@
 import './NavBar.styles.css'
 import {Link} from 'react-router-dom'
-
+import addPost from './add.png'
+import AddnewPost from '../subpages/Home/addpost.component';
 
 const NavBar = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -22,25 +23,26 @@ const NavBar = () => (
       <div className="collapse navbar-collapse " id="navbarSupportedContent" >
         <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
           <li className="nav-item">
-            
             <Link to='/' className='nav-link active' aria-current="page" >Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              About
-            </a>
+            {/* <Link to='/about' className='nav-link'>About Us</Link> */}
           </li>
 
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Contact Us
-            </a>
+            <Link to='/contact' className='nav-link'>Contact Us</Link>
           </li>
           <li className="nav-item">
               <Link to='/login' className='nav-link'>Login / SignUp</Link>
           </li>
         </ul>
         <form className="d-flex" role="search">
+          <button className='addpostbtn'>
+            <span className='addpostspan'>Add <br /> Post</span>
+            <Link to='/addPost' className='nav-link'>
+              <img src={addPost} alt="" style={{width:"40px",padding:"3px",marginRight:"8px"}}/>
+            </Link>
+          </button>
           <input
             className="form-control me-2"
             type="search"
