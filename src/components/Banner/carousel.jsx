@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Carousel from 'react-elastic-carousel'
+// import Carousel from 'react-elastic-carousel'
 
 class Carouselcomp extends Component{
   state={

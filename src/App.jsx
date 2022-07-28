@@ -12,6 +12,8 @@ import AddnewPost from './components/subpages/Home/Addpost.component.jsx'
 
 
 function App() {
+
+  
   return (
     <div>
       {/* <NavBar /> */}

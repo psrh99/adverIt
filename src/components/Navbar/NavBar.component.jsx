@@ -3,7 +3,9 @@ import {Link} from 'react-router-dom'
 import addPost from './add.png'
 import AddnewPost from '../subpages/Home/Addpost.component';
 
-const NavBar = () => (
+const NavBar = () => {
+
+  return(
   <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div className="container-fluid">
       <a className="navbar-brand h1" href="#">
@@ -48,6 +50,7 @@ const NavBar = () => (
             type="search"
             placeholder="Search"
             aria-label="Search"
+            // onChange={handleChange}
           />
           <button className="btn btn-outline-success" type="submit">
             Search
@@ -78,6 +81,7 @@ const NavBar = () => (
   // </div>
   // </div>
 
-);
+)
+}
 
 export default NavBar;

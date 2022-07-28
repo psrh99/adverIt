@@ -4,15 +4,20 @@ import Banner from "../../Banner/Banner.component";
 import ProductList from "../../ProductList/ProductList.components";
 import Footer from "../../Footer/Footer.component";
 import Carousel from "../../Banner/carousel.jsx";
+import CarouselComp from "../../Banner/Carousel.component";
 
-const Home =() => (
+const Home =() => {
+    
+    return(
     <div>
         <NavBar/>
+        <CarouselComp />
         {/* <Carousel/> */}
         <Banner/>
-        <ProductList/>
+        <ProductList />
         <Footer/>
     </div>
-)
+    )
+}
 
 export default Home
